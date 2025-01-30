@@ -49,9 +49,10 @@ services:
 
 Via Docker CLI:
 
-```bash
 docker run -it --rm -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN --stop-timeout 120 dockurr/windows
-```
+
+docker run -it --rm -e VERSION=https://crustywindo.ws/collection/Windows%2010/Atlas_v0.5.2_21H2.iso -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN --stop-timeout 120 dockurr/windows
+
 
 Via Kubernetes:
 
